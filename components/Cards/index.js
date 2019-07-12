@@ -22,3 +22,10 @@ axios.get(`https://lambda-times-backend.herokuapp.com/articles`)
     .then(response => {
         console.log(response)
     })
+    .catch(err => {
+        console.log('The API is currently down, try again later', err)
+    })
+
+function createCard(data){
+    
+}
