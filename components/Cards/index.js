@@ -34,5 +34,10 @@ function createCard(data){
     const authorImg = document.createElement('img')
     const authorName = document.createElement('span')
 
+    card.classList.add('card')
+    articleHeadline.classList.add('headline')
+    articleAuthor.classList.add('author')
+    imgContainer.classList.add('img-container')
+
     
 }
