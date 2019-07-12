@@ -25,5 +25,9 @@ function Header() {
     headerTitle.textContent = `Lambda Times`;
     headerTemp.textContent = `98°`
 
+    header.appendChild(headerDate);
+    header.appendChild(headerTitle);
+    header.appendChild(headerTemp);
+
     return header;
 }
