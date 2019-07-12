@@ -11,9 +11,15 @@
 const topics = document.querySelector('.topics')
 
 axios.get(`https://lambda-times-backend.herokuapp.com/topics`)
-    .then(data => {
-        console.log(data)
-        topics.appendChild(tabComponent(data.data))
+    .then(response => {
+        // console.log(response)
+        topics.appendChild(tabComponent(response.data))
+        const topicArray = response.data.topics
+        console.log(topicArray)
+        topicArray.forEach(topic => {
+           tab.appendChild(topic)
+        })
+        
     })
     .catch(err => {
         console.log('The API is currently down, try again later', err)
@@ -24,9 +30,10 @@ function tabComponent(data){
 
     tab.classList.add('tab')
 
-    tab.textContent = data.topics
+    
+    // tab.textContent = topicArray.forEach(topic => {
+    //     tab.appendChild(data.topic)
+    // })
 
     return tab;
-
-
 }
