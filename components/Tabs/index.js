@@ -9,3 +9,9 @@
 //    <div class="tab">topic here</div>
 
 axios.get(`https://lambda-times-backend.herokuapp.com/topics`)
+    .then(data => {
+        console.log(data)
+    })
+    .catch(err => {
+        console.log('The API is currently down, try again later', err)
+    })
