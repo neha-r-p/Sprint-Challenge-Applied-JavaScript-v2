@@ -15,3 +15,11 @@ axios.get(`https://lambda-times-backend.herokuapp.com/topics`)
     .catch(err => {
         console.log('The API is currently down, try again later', err)
     })
+
+function tabComponent(){
+    const tab = document.createElement('div')
+
+    tab.classList.add('tab')
+
+    
+}
