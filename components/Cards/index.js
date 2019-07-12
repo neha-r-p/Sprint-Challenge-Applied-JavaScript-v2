@@ -39,5 +39,8 @@ function createCard(data){
     articleAuthor.classList.add('author')
     imgContainer.classList.add('img-container')
 
-    
+    articleHeadline.textContent = data.headline //change path to get actual headline
+    authorImg.src = data.authorPhoto //change path 
+    authorName.textContent = `By: ${data.authorName}` //change path
+
 }
