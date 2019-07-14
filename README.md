@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+    DOM stands for Document Object Model, and it is an object representation of the HTML elements on the webpage, with a "tree" structure for the nested elements. It acts as a bridge between the HTML and the browser, and can be used to manipulate the webpage directly in the browser.
+
 2. What is an event?
+
+    An event is any interaction a user has ith a website, such as a click, hover, scroll, etc.
 
 3. What is an event listener?
 
+    An event listener is put on an element and given a callback depending on the event type. When the event is triggered, the callback is run.
+
 4. Why would we convert a NodeList into an Array?
 
+    We would need to convert a NodeList to an Array to use Array methods. A NodeList is considered an Array-like object, and has access to the forEach method, but to use other array methods like .map and .reduce, it needs to be converted into an actual Array.
+
 5. What is a component?
+
+    Components are reusable building blocks for websites that are made up of HTML, CSS, and JavaScript.
 
 ### Git Set up
 
@@ -68,3 +78,4 @@ Your stretch challenge is to write the functionality of a `Carousel` component. 
 * [ ] Create an 'infinite loop' carousel. In which as long as you click on an arrow, the array of images will loop over itself.
 
 * [ ] If you have finished the above, research `data attributes`. Implement data attributes within your tabs as well as your cards. Give the tabs functionality so that when they are clicked they filter the cards to only display the cards that contain that topic.
+
